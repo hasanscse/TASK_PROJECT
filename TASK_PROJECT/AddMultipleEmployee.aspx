@@ -71,6 +71,14 @@
                 return false;
             }
 
+            else {
+                document.getElementById("MainContent_txtPhone").style.border = "2px solid white";
+                document.getElementById("MainContent_txtEmail").style.border = "2px solid white";
+
+                document.getElementById("MainContent_txtLastName").style.border = "2px solid white";
+                document.getElementById("MainContent_txtFirstName").style.border = "2px solid white";
+            }
+
         }
     </script>
 
@@ -141,7 +149,7 @@
                                         <asp:Button class="btn btn-primary" ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" OnClientClick="return LikeBtnClick();" />
                                         <asp:Button class="btn btn-primary" ID="btnUpdate" runat="server" Text="Update" OnClick="btnUpdate_Click" />
                                     </div>
-
+                                      
                                 </div>
                             </div>
 
@@ -160,11 +168,13 @@
             </div>
 
             <div class="row">
+
+              
                 <div class="panel panel-primary">
                     <div class="panel-body">
-
+                    
                         <div class="text-right">
-
+                              
 
                             <asp:GridView ID="dgdepartment" runat="server" AutoGenerateColumns="false" CssClass="table table-striped"
                                 Font-Names="Comic Sans MS" AllowPaging="true">
